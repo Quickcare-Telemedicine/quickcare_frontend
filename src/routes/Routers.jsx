@@ -10,13 +10,14 @@ import Contact from "../pages/Contact";
 import Dashboard from "../Dashboard/doctor-account/Dashboard";
 import ProjectedRoute from "./ProjectedRoute";
 import CheckoutSuccess from "../pages/CheckoutSuccess";
+import Bot from "/Users/sunnyp/medical-center-frontend/src/pages/Chatbot.jsx";
 const Routers = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/doctors" element={<Doctors />} />
-
+      <Route path="/chatbot" element={<Bot />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<SignUp />} />
       <Route path="/contact" element={<Contact />} />

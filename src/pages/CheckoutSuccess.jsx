@@ -14,7 +14,7 @@ const CheckoutSuccess = () => {
           <div className="py-10 text-center">
             <Link
               to="/home"
-              className="px-12 bg-lime-600 text-white font0semibold py-3"
+              className="px-12 bg-red-900 text-white font0semibold py-3"
             >
               Go back home
             </Link>

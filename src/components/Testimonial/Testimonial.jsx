@@ -39,7 +39,7 @@ const Testimonial = () => {
 
               <div>
                 <h4 className="text-[18px] leading-[30px] font-semibold ">
-                  Robin R
+                  Sarah M
                 </h4>
                 <div className="flex items-center gap-[2px]">
                   <HiStar className="text-yellowColor w-[18px] h-5" />
@@ -52,9 +52,7 @@ const Testimonial = () => {
             </div>
 
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400] ">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-              aperiam vero ab, odit corporis cumque a consectetur. Est, rem
-              ullam.
+            QuickCare made my consultation so easy! The AI symptom checker was surprisingly accurate, and I got connected with a doctor within minutes. Highly recommend it for anyone looking for quick and professional medical advice!
             </p>
           </div>
         </SwiperSlide>
@@ -65,7 +63,7 @@ const Testimonial = () => {
 
               <div>
                 <h4 className="text-[18px] leading-[30px] font-semibold ">
-                  Robin R
+                  Priya K
                 </h4>
                 <div className="flex items-center gap-[2px]">
                   <HiStar className="text-yellowColor w-[18px] h-5" />
@@ -78,9 +76,7 @@ const Testimonial = () => {
             </div>
 
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400] ">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-              aperiam vero ab, odit corporis cumque a consectetur. Est, rem
-              ullam.
+            Booking an appointment was super simple, and I didn’t have to wait in long hospital queues. The doctor was professional and gave me the right treatment plan. QuickCare truly values patients!
             </p>
           </div>
         </SwiperSlide>
@@ -91,7 +87,7 @@ const Testimonial = () => {
 
               <div>
                 <h4 className="text-[18px] leading-[30px] font-semibold ">
-                  Robin R
+                  David L
                 </h4>
                 <div className="flex items-center gap-[2px]">
                   <HiStar className="text-yellowColor w-[18px] h-5" />
@@ -104,9 +100,7 @@ const Testimonial = () => {
             </div>
 
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400] ">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-              aperiam vero ab, odit corporis cumque a consectetur. Est, rem
-              ullam.
+            This site is a game-changer! I described my symptoms, and the AI suggested the right specialist. My virtual consultation was smooth, and I felt heard and cared for. Definitely using QuickCare again!
             </p>
           </div>
         </SwiperSlide>

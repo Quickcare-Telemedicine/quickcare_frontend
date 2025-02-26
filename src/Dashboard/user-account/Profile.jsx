@@ -73,7 +73,7 @@ const Profile = ({ userData }) => {
             value={formData.name}
             onChange={handleInputChange}
             placeholder="Full Name"
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-[#0067FF] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
+            className="w-full pr-4 py-3 border-b border-solid border-red-900 focus:outline-none focus:border-b-[#0067FF] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
           />
         </div>
         <div className="mb-5">
@@ -84,7 +84,7 @@ const Profile = ({ userData }) => {
             onChange={handleInputChange}
             name="email"
             placeholder="Enter Your Email"
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-[#0067FF] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
+            className="w-full pr-4 py-3 border-b border-solid border-red-900 focus:outline-none focus:border-b-[#0067FF] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
             aria-readonly
           />
         </div>
@@ -96,7 +96,7 @@ const Profile = ({ userData }) => {
             onChange={handleInputChange}
             name="password"
             placeholder="Password"
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-[#0067FF] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
+            className="w-full pr-4 py-3 border-b border-solid border-red-900 focus:outline-none focus:border-b-[#0067FF] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
           />
         </div>
 
@@ -130,7 +130,7 @@ const Profile = ({ userData }) => {
 
         <div className="mb-5 flex items-center gap-3">
           {formData.photo && (
-            <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-lime-600 flex items-center justify-center">
+            <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-red-900 flex items-center justify-center">
               <img
                 src={formData.photo}
                 alt="Preview"
@@ -150,7 +150,7 @@ const Profile = ({ userData }) => {
             />
 
             <label
-              className="custom-file-label absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-lime-600 text-white font-semibold rounded-lg truncate cursor-pointer"
+              className="custom-file-label absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-red-900 text-white font-semibold rounded-lg truncate cursor-pointer"
               htmlFor="customFile"
             >
               {selectedFile ? selectedFile.name : "Upload Photo"}
@@ -161,7 +161,7 @@ const Profile = ({ userData }) => {
         <div className="mt-7">
           <button
             type="submit"
-            className="w-full bg-lime-600 text-white py-3 px-4 rounded-lg text-[18px] leading-[30px]"
+            className="w-full bg-red-900 text-white py-3 px-4 rounded-lg text-[18px] leading-[30px]"
           >
             Update Profile
           </button>

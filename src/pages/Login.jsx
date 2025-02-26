@@ -63,19 +63,19 @@ const Login = () => {
       <div className=" w-full max-w-[570px] mx-auto rounded-lg shadow-lg md:p-10">
         <div>
           <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10 ">
-            Hello! <span className="text-lime-500">Welcome</span>
+            Hello! <span className="text-red-900">Let's get in touch</span>
           </h3>
 
           <form className="py-4 md:py-0" onSubmit={handleSubmit}>
             <div className="mb-5 px-5">
               <input
                 type="email"
-                placeholder="Enter Your Email"
+                placeholder="Email ID"
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="w-full py-3 border-b border-solid border-lime-600 focus:outline-none focus:border-lime-600 text-[22px] leading-7 text-headingColor placeholder:text-textColor
+                className="w-full py-3 border-b border-solid border-red-900 focus:outline-none focus:border-red-900 text-[22px] leading-7 text-headingColor placeholder:text-textColor
                 cursor-pointer"
               />
             </div>
@@ -83,26 +83,26 @@ const Login = () => {
             <div className="mb-5 px-5">
               <input
                 type="password"
-                placeholder="Enter Your password"
+                placeholder="Password"
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
                 required
-                className="w-full  py-3 border-b border-solid border-lime-600 focus:outline-none focus:border-lime-600 text-[22px] leading-7 text-headingColor placeholder:text-textColor
+                className="w-full  py-3 border-b border-solid border-red-900 focus:outline-none focus:border-red-900 text-[22px] leading-7 text-headingColor placeholder:text-textColor
               cursor-pointer"
               />
             </div>
 
             <div className="mt-7 px-5">
-              <button className="w-full bg-lime-600 text-white text-[18px] leading-[30px] rounded-lg px-4 py-3">
+              <button className="w-full bg-red-900 text-white text-[18px] leading-[30px] rounded-lg px-4 py-3">
                 {loading ? <HashLoader size={25} color="#fff" /> : "Login"}
               </button>
             </div>
 
             <p className="mt-5 text-textColor text-center">
               Don&apos;t have an account?
-              <Link to="/register" className="text-lime-600 font-medium ml-1">
-                Register
+              <Link to="/register" className="text-red-900 font-medium ml-1">
+                Register 
               </Link>
             </p>
           </form>

@@ -41,7 +41,7 @@ const MyAccount = () => {
           <div className="grid md:grid-cols-5 gap-10">
             <div className="pb-[50px] px-[30px] rounded-md">
               <div className="flex items-center justify-center">
-                <figure className="w-[100px] h-[100px] rounded-full border-2 border-lime-500">
+                <figure className="w-[100px] h-[100px] rounded-full border-2 border-red-900">
                   <img
                     src={userData.photo}
                     alt=""
@@ -69,7 +69,7 @@ const MyAccount = () => {
               <div className="mt-[50px] md:mt-[100px]">
                 <button
                   onClick={handleLogout}
-                  className="w-full bg-lime-500 p-3 text-[16px] leading-7 rounded-md text-white"
+                  className="w-full bg-red-900 p-3 text-[16px] leading-7 rounded-md text-white"
                 >
                   Logout
                 </button>
@@ -84,8 +84,8 @@ const MyAccount = () => {
                 <button
                   onClick={() => setTab("bookings")}
                   className={`${
-                    tab === "bookings" && "bg-lime-500 text-white font-normal"
-                  } p-2 mr-5 px-5 rounded-md text-headingColor font-semibold text-[16px] leading-7 border border-solid border-lime-500`}
+                    tab === "bookings" && "bg-red-900 text-white font-normal"
+                  } p-2 mr-5 px-5 rounded-md text-headingColor font-semibold text-[16px] leading-7 border border-solid border-red-900`}
                 >
                   My Bookings
                 </button>
@@ -93,8 +93,8 @@ const MyAccount = () => {
                 <button
                   onClick={() => setTab("settings")}
                   className={` ${
-                    tab === "settings" && "bg-lime-500 text-white font-normal "
-                  } py-2 px-5  rounded-md text-headingColor font-semibold text-[16px] leading-7 border border-solid border-lime-500`}
+                    tab === "settings" && "bg-red-900 text-white font-normal "
+                  } py-2 px-5  rounded-md text-headingColor font-semibold text-[16px] leading-7 border border-solid border-red-900`}
                 >
                   Profile Setting
                 </button>

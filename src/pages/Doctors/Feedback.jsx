@@ -24,7 +24,7 @@ const Feedback = ({ reviews, totalRating }) => {
                 </figure>
 
                 <div>
-                  <h5 className="text-[16px ] leading-6 text-lime-600 font-bold">
+                  <h5 className="text-[16px ] leading-6 text-red-900 font-bold">
                     {review?.user?.name}
                   </h5>
                   <p className="text-[14px] leading-6 text-textColor">

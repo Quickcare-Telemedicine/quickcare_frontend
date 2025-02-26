@@ -17,20 +17,12 @@ function About() {
           </div>
           {/* about content */}
           <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2">
-            <h2 className="heading">Proud to be one of the best</h2>
+            <h2 className="heading">One of the quickest solution</h2>
             <p className="text__para">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Assumenda optio sapiente laudantium, fugiat quae laboriosam
-              blanditiis fuga quam deleniti cupiditate eius inventore voluptas
-              ut debitis!
+            Proud to be among the best, QuickCare is dedicated to transforming healthcare accessibility through innovation. Our advanced telemedicine platform seamlessly connects patients with top medical professionals, offering AI-driven symptom analysis, expert consultations, and personalized care. With a commitment to excellence, we strive to provide fast, reliable, and high-quality healthcare solutions—anytime, anywhere.
             </p>
-            <p className="text__para mt-[30px]">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
-              sapiente odio fugiat quasi eum hic est accusantium maiores nam id.
-            </p>
-            <Link to="/">
-              <button className="btn">Learn more</button>
-            </Link>
+            
+      
           </div>
         </div>
       </div>

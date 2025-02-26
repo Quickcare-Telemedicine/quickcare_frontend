@@ -7,7 +7,7 @@ const Contact = () => {
         <h2 className="heading text-center">Contact Us</h2>
 
         <p className="mb-8 lg:mb-16 font-light text-center text__para">
-          Want to give a feedback or talk to us?. Let use know.
+          Want to give a feedback or talk to us?. Let us know.
         </p>
         <form action="#" className="space-y-8">
           <div>

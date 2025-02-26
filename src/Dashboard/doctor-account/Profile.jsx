@@ -387,7 +387,7 @@ const Profile = ({ doctorData }) => {
                 </div>
 
                 <button
-                  className="bg-red-600 p-2 rounded-full text-white text-[18px] mt-2 mb-[30px]"
+                  className="bg-red-900 p-2 rounded-full text-white text-[18px] mt-2 mb-[30px]"
                   onClick={(e) => deleteExperience(e, index)}
                 >
                   <AiOutlineDelete />
@@ -504,7 +504,7 @@ const Profile = ({ doctorData }) => {
             />
 
             <label
-              className="custom-file-label absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
+              className="custom-file-label absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-red-900 text-headingColor font-semibold rounded-lg truncate cursor-pointer"
               htmlFor="customFile"
             >
               {selectedFile ? selectedFile.name : "Upload Photo"}
@@ -516,7 +516,7 @@ const Profile = ({ doctorData }) => {
           <button
             type="submit"
             onClick={updateDoctorHandler}
-            className="w-full bg-lime-600 text-white py-3 px-4 rounded-lg text-[18px] leading-[30px]"
+            className="w-full bg-red-900 text-white py-3 px-4 rounded-lg text-[18px] leading-[30px]"
           >
             Update Profile
           </button>

@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo.png";
+import logo from "/Users/sunnyp/medical-center-frontend/src/assets/images/logo.png";
 import { useContext, useEffect, useRef } from "react";
 import { BiMenu } from "react-icons/bi";
 import { AuthContext } from "../../context/AuthContext.jsx";
@@ -20,6 +20,10 @@ const navLinks = [
     path: "/contact",
     display: "Contact",
   },
+  {
+    path: "/chatbot",
+    display: "AI ChatBot"
+  }
 ];
 const Header = () => {
   const headerRef = useRef(null);
@@ -68,7 +72,7 @@ const Header = () => {
                     className={(navClass) =>
                       navClass.isActive
                         ? "text-[#1bcc20 ] font-[600] text-[16px] leading-7"
-                        : "text-textColor font-[500] text-[16px] leading-7 hover:text-lime-500"
+                        : "text-textColor font-[500] text-[16px] leading-7 hover:text-red-900"
                     }
                   >
                     {link.display}
@@ -104,7 +108,7 @@ const Header = () => {
               </div>
             ) : (
               <Link to="login">
-                <button className="bg-lime-500 text-white py-2 px-6 rounded-[50px] font-[600] h-[44px] flex items-center justify-center">
+                <button className="bg-red-900 text-white py-2 px-6 rounded-[50px] font-[600] h-[44px] flex items-center justify-center">
                   Log In
                 </button>
               </Link>

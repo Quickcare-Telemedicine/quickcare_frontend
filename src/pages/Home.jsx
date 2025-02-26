@@ -26,13 +26,10 @@ const Home = () => {
             <div>
               <div className=" lg:w-[570px]">
                 <h1 className="text-headingColor text-[36px] leading-[46px] md:text-[60px] md:leading-[70px] font-[800] ">
-                  We help patients live a healthy, longer life.
+                 One stop for all things health.
                 </h1>
                 <p className="text__para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Natus quaerat cumque fugit, perspiciatis cum nemo aperiam, aut
-                  quia earum amet architecto, modi odio. Soluta unde ducimus
-                  perferendis?
+                QuickCare revolutionizes healthcare by providing instant, AI-driven symptom analysis, seamless doctor recommendations, and flexible telemedicine consultations—ensuring fast, accessible, and reliable medical care anytime, anywhere.
                 </p>
                 <button className="btn">Request an Appointment </button>
               </div>
@@ -40,18 +37,18 @@ const Home = () => {
               <div className="mt-[30px] lg:mt-[70px] flex flex-col md:flex-row lg:items-center gap-5 lg:gap-[30px]">
                 <div>
                   <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                    30+
+                    100+
                   </h2>
                   <span className="w-[100px] h-2 rounded-full bg-yellowColor block mt-[-14px]"></span>
-                  <p className="text__para">Years of Experience</p>
+                  <p className="text__para">Doctors</p>
                 </div>
 
                 <div>
                   <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
-                    15+
+                    20+
                   </h2>
                   <span className="w-[100px] h-2 rounded-full bg-purpleColor block mt-[-14px]"></span>
-                  <p className="text__para">Clinic Location</p>
+                  <p className="text__para">Locations</p>
                 </div>
 
                 <div>
@@ -86,11 +83,10 @@ const Home = () => {
         <div className="container ">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center">
-              Providing the best medical services
+              Providing efficient medical services
             </h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers unmatched,
-              expert health care.
+            Exceptional healthcare for all. Our system delivers unparalleled expertise and compassionate medical care.
             </p>
           </div>
 
@@ -105,13 +101,12 @@ const Home = () => {
                   Find a Doctor
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  World-class care for everyone. Our health System offers
-                  unmatched, expert health care. From the lab to the clinic.
+                Find the right doctor for your needs with ease. Browse expert healthcare professionals, view their specialties and choose your doctor.
                 </p>
 
                 <Link
                   to="/doctors"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-lime-500 hover:border-none"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-red-900 hover:border-none"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5" />
                 </Link>
@@ -128,13 +123,12 @@ const Home = () => {
                   Find a Location
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  World-class care for everyone. Our health System offers
-                  unmatched, expert health care. From the lab to the clinic.
+                Quickly find the nearest doctor based on your location, ensuring convenient access to expert medical care whenever you need it.
                 </p>
 
                 <Link
                   to="/doctors"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-lime-500 hover:border-none"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-red-900 hover:border-none"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5" />
                 </Link>
@@ -150,13 +144,12 @@ const Home = () => {
                   Book Appointment
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  World-class care for everyone. Our health System offers
-                  unmatched, expert health care. From the lab to the clinic.
+                Choose your preferred doctor, select a convenient time, and receive expert medical care—online or in person.
                 </p>
 
                 <Link
                   to="/doctors"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#1bcc20 ] mt-[30px] mx-auto flex items-center justify-center group hover:bg-lime-500 hover:border-none"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#1bcc20 ] mt-[30px] mx-auto flex items-center justify-center group hover:bg-red-900 hover:border-none"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5" />
                 </Link>
@@ -173,8 +166,7 @@ const Home = () => {
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">Our medical services</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers unmatched,
-              expert health care.
+            Providing expert, compassionate, and cutting-edge healthcare across various specialties.
             </p>
           </div>
 
@@ -251,10 +243,9 @@ const Home = () => {
       <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
-            <h2 className="heading text-center">Our great doctors</h2>
+            <h2 className="heading text-center">Dedicated to Your Well-Being</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers unmatched,
-              expert health care.
+            At QuickCare, our team of highly skilled and compassionate doctors is committed to delivering exceptional healthcare. With expertise across various specialties, they provide personalized consultations, accurate diagnoses, and tailored treatment plans. Whether through virtual appointments or in-person visits, our doctors ensure quality care, guiding you toward better health with professionalism and empathy.
             </p>
           </div>
 

@@ -81,7 +81,7 @@ const Signup = () => {
           {/* signup */}
           <div className="rounded-l-lg lg:pl-16 py-10">
             <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10">
-              Create an <span className="text-lime-500">account</span>
+              Create an <span className="text-red-900">account</span>
             </h3>
 
             <form onSubmit={submitHandler}>
@@ -92,7 +92,7 @@ const Signup = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Full Name"
-                  className="w-full pr-4 py-3 border-b border-solid border-[#1bcc20] focus:outline-none focus:border-b-[#1bcc20] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
+                  className="w-full pr-4 py-3 border-b border-solid border-red-900 focus:outline-none focus:border-b-[#1bcc20] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
                   required
                 />
               </div>
@@ -103,7 +103,7 @@ const Signup = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="Enter Your Email"
-                  className="w-full pr-4 py-3 border-b border-solid border-[#1bcc20] focus:outline-none focus:border-b-[#1bcc20] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
+                  className="w-full pr-4 py-3 border-b border-solid border-red-900 focus:outline-none focus:border-b-[#1bcc20] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
                   required
                 />
               </div>
@@ -115,7 +115,7 @@ const Signup = () => {
                   placeholder="Password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full pr-4 py-3 border-b border-solid border-[#1bcc20] focus:outline-none focus:border-b-[#1bcc20] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
+                  className="w-full pr-4 py-3 border-b border-solid border-red-900 focus:outline-none focus:border-b-[#1bcc20] text-[16px] leading-7 text-headingColor placeholder:text-textColor"
                   required
                 />
               </div>
@@ -151,7 +151,7 @@ const Signup = () => {
 
               <div className="mb-5 flex items-center gap-3">
                 {selectedFile && (
-                  <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-lime-500 flex items-center">
+                  <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-red-900 flex items-center">
                     <img
                       src={previewURL}
                       alt="Preview"
@@ -170,7 +170,7 @@ const Signup = () => {
                   />
 
                   <label
-                    className="custom-file-label absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#1bcc20] text-white font-semibold rounded-lg truncate cursor-pointer"
+                    className="custom-file-label absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-red-900 text-white font-semibold rounded-lg truncate cursor-pointer"
                     htmlFor="customFile"
                   >
                     {selectedFile ? selectedFile.name : "Upload photo"}
@@ -182,7 +182,7 @@ const Signup = () => {
                 <button
                   disabled={loading && true}
                   type="submit"
-                  className="w-full bg-[#1bcc20] text-white py-3 px-4 rounded-lg text-[18px] leading-[30px]"
+                  className="w-full bg-red-900 text-white py-3 px-4 rounded-lg text-[18px] leading-[30px]"
                 >
                   {loading ? (
                     <HashLoader siza={35} color="#ffffff" />
@@ -194,7 +194,7 @@ const Signup = () => {
 
               <p className="mt-5 text-textColor text-center">
                 Already have an account?{" "}
-                <Link to="/login" className="text-lime-600 font-medium">
+                <Link to="/login" className="text-red-900 font-medium">
                   Login
                 </Link>
               </p>
