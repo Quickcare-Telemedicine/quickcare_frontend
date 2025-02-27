@@ -1,4 +1,4 @@
-import logo from "/Users/sunnyp/medical-center-frontend/src/assets/images/logofooter.png";
+import logo from "/Users/ramansh/Downloads/quickcare_web/src/assets/images/logofooter.png";
 import { Link } from "react-router-dom";
 import { RiLinkedinFill } from "react-icons/ri";
 import {

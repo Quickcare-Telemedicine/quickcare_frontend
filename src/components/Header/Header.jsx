@@ -1,4 +1,4 @@
-import logo from "/Users/sunnyp/medical-center-frontend/src/assets/images/logo.png";
+import logo from "/Users/ramansh/Downloads/quickcare_web/src/assets/images/logo.png";
 import { useContext, useEffect, useRef } from "react";
 import { BiMenu } from "react-icons/bi";
 import { AuthContext } from "../../context/AuthContext.jsx";

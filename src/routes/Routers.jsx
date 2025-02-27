@@ -10,7 +10,7 @@ import Contact from "../pages/Contact";
 import Dashboard from "../Dashboard/doctor-account/Dashboard";
 import ProjectedRoute from "./ProjectedRoute";
 import CheckoutSuccess from "../pages/CheckoutSuccess";
-import Bot from "/Users/sunnyp/medical-center-frontend/src/pages/Chatbot.jsx";
+import Bot from "/Users/ramansh/Downloads/quickcare_web/src/pages/Chatbot.jsx";
 const Routers = () => {
   return (
     <Routes>

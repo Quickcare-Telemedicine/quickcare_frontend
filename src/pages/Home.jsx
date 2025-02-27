@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroImg01 from "../assets/images/hero-img01.png";
+import heroImg01 from "../assets/images/doctor-img01.png";
 import heroImg02 from "../assets/images/hero-img02.png";
 import heroImg03 from "../assets/images/hero-img03.png";
 import icon01 from "../assets/images/icon01.png";
@@ -64,7 +64,7 @@ const Home = () => {
             {/* =========== hero img ============ */}
             <div className="flex gap-[30px] justify-end">
               <div>
-                <img className="w-full" src={heroImg01} alt="hero_img" />
+                <img className="w-full rounded-[15px]" src={heroImg01} alt="hero_img" />
               </div>
               <div className="mt-[30px]">
                 <img
