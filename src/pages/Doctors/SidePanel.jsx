@@ -1,63 +1,55 @@
-/* eslint-disable react/prop-types */
+import { useState } from "react";
 
-import convertTime from "../../utils/convertTime";
-import { BASE_URL, token } from "./../../config";
-
-const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
-  const bookingHandler = async () => {
-    try {
-      const res = await fetch(
-        `${BASE_URL}/bookings/checkout-session/${doctorId}`,
-        {
-          method: "post",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-
-      const data = await res.json();
-
-      if (data.session.url) {
-        window.location.href = data.session.url;
-      }
-    } catch (error) {
-      console.log(error.message);
-    }
+export default function QuickCareAppointment() {
+  const [appointmentRequested, setAppointmentRequested] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const userDetails = {
+    name: "John Doe",
+    email: "johndoe@example.com",
+    phone: "123-456-7890"
   };
+
+  const handleRequestAppointment = () => {
+    setAppointmentRequested(true);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFormSubmitted(true);
+  };
+
+  if (appointmentRequested && !formSubmitted) {
+    return (
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", backgroundColor: "white", color: "#800000", padding: "1.5rem" }}>
+        <div style={{ width: "100%", maxWidth: "400px", padding: "1.5rem", backgroundColor: "#f5e6e6", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", borderRadius: "10px", textAlign: "center" }}>
+          <h1 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "1rem" }}>Patient Details</h1>
+          <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+            <input type="text" defaultValue={userDetails.name} placeholder="Name" required style={{ padding: "0.5rem", borderRadius: "5px", border: "1px solid #800000" }} />
+            <input type="email" defaultValue={userDetails.email} placeholder="Email" required style={{ padding: "0.5rem", borderRadius: "5px", border: "1px solid #800000" }} />
+            <input type="tel" defaultValue={userDetails.phone} placeholder="Phone" required style={{ padding: "0.5rem", borderRadius: "5px", border: "1px solid #800000" }} />
+            <button type="submit" style={{ backgroundColor: "#800000", color: "white", padding: "0.5rem 1rem", borderRadius: "5px", border: "none", cursor: "pointer", transition: "background 0.3s" }}>
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="shadow-panelShadow p-3 lg:p-5 rounded-md ">
-      <div className="flex items-center justify-between">
-        <p className="text__para mt-0 font-semibold">Booking price</p>
-        <span className="text-[16px] leading-7 lg:text-[22px] lg:leading-8 text-headingColor font-bold">
-          Rs. 200
-        </span>
-      </div>
-
-      <div className="mt-[30px]">
-        <p className="text-para mt-0 font-semibold text-headingColor">
-          Available Time:
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", backgroundColor: "white", color: "#800000", padding: "1.5rem" }}>
+      <div style={{ width: "100%", maxWidth: "400px", padding: "1.5rem", backgroundColor: "#f5e6e6", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", borderRadius: "10px", textAlign: "center" }}>
+        <h1 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "1rem" }}>QuickCare Appointment</h1>
+        <p style={{ color: "#660000", marginBottom: "1rem" }}>
+          Request an appointment with our doctors at your convenience.
         </p>
-
-        <ul className="mt-3">
-          {timeSlots?.map((item, index) => (
-            <li key={index} className="flex items-center justify-between mb-2">
-              <p className="text-[15px] leading-6 text-textColor font-semibold">
-                {item.day.charAt(0).toUpperCase() + item.day.slice(1)}
-              </p>
-              <p className="text-[15px] leading-6 text-textColor font-semibold">
-                {convertTime(item.startingTime)} -{convertTime(item.endingTime)}
-              </p>
-            </li>
-          ))}
-        </ul>
+        <button
+          style={{ backgroundColor: "#800000", color: "white", padding: "0.5rem 1rem", borderRadius: "5px", border: "none", cursor: "pointer", transition: "background 0.3s" }}
+          onClick={handleRequestAppointment}
+        >
+          Request Appointment
+        </button>
       </div>
-
-      <button onClick={bookingHandler} className="btn px-2 w-full rounded-md">
-        Book Appointment
-      </button>
     </div>
   );
-};
-
-export default SidePanel;
+}

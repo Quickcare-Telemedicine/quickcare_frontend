@@ -31,7 +31,9 @@ const Home = () => {
                 <p className="text__para">
                 QuickCare revolutionizes healthcare by providing instant, AI-driven symptom analysis, seamless doctor recommendations, and flexible telemedicine consultations—ensuring fast, accessible, and reliable medical care anytime, anywhere.
                 </p>
-                <button className="btn">Request an Appointment </button>
+                <a href="/doctors">
+                <button className="btn"> Request an Appointment </button>
+                </a>
               </div>
 
               <div className="mt-[30px] lg:mt-[70px] flex flex-col md:flex-row lg:items-center gap-5 lg:gap-[30px]">

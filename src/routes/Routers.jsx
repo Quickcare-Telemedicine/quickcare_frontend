@@ -11,6 +11,7 @@ import Dashboard from "../Dashboard/doctor-account/Dashboard";
 import ProjectedRoute from "./ProjectedRoute";
 import CheckoutSuccess from "../pages/CheckoutSuccess";
 import Bot from "/Users/ramansh/Downloads/quickcare_web/src/pages/Chatbot.jsx";
+import Appointments from "/Users/ramansh/Downloads/quickcare_web/src/pages/appointment-booking.jsx";
 const Routers = () => {
   return (
     <Routes>
@@ -24,6 +25,7 @@ const Routers = () => {
       <Route path="/doctors/:id" element={<DoctorDetails />} />
       <Route path="/services" element={<Services />} />
       <Route path="/checkout-success" element={<CheckoutSuccess />} />
+      <Route path="/appointments" element={<Appointments />} />
       <Route
         path="/users/profile/me"
         element={
